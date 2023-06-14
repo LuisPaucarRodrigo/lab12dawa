@@ -1,0 +1,18 @@
+<!-- <p>post-list works!</p> -->
+<div class="container">
+  <div class="row">
+    <div *ngFor="let item of lista" class="col-lg-4 col-md-6 col-sm-12">
+      <a [routerLink]="['/publications',  item.id]"  class="card btn" style="width: 100%;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/220px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.titulo }}</h5>
+          <p class="card-text">{{ item.contenido }}</p>
+        </div>
+      </a>
+    </div>
+    <!-- Otras columnas aquí -->
+  </div>
+</div>
+
+<!-- <app-post-details [list]="item"></app-post-details> -->
+
